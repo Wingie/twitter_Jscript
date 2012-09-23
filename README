@@ -1,0 +1,12 @@
+This example exracts a given users posts from the last 7 days using the JSON search API provided by Twitter.
+The data is extracted from the user_timeline specification of twitter as described in https://dev.twitter.com/docs/api/1.1/get/statuses/user_timeline.
+
+This API does not provide any native mechanism to query posts from a specified timeline (due to the pomposity of the twitter developer team) so we have to request the max number of rsults that the API allows and sort through the result to filter posts that are out of our specified timeline.
+
+USAGE:
+
+This page takes in the user to return the posts for as a GET argument in PHP. So the page has to be put in a local server of your choice.
+
+http://localhost:8080/twitter_Jscript/index.php?user=Dries
+
+would return the posts for the user "Dries" for the last 7 days. 
